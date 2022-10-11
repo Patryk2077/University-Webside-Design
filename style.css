@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .header {
     min-height: 100vh;
@@ -15,7 +16,6 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
 }
 nav img {
     width: 150px;
@@ -34,4 +34,28 @@ nav img {
     text-decoration: none;
     color: white;
     font-size: 13px;
+}
+.nav-link ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+.text-box {
+    color: white;
+    text-align: center;
+    margin-top: 25vh;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p {
+    font-size: 14px;
+    margin: 10px 0px 40px;
 }

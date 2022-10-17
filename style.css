@@ -86,6 +86,7 @@ nav img {
 
 /*----Courses---*/
 .course {
+    width: 80%;
     background-color: white;
     margin: auto;
     text-align: center;
@@ -138,4 +139,26 @@ h3 {
     margin: auto;
     text-align: center;
     padding-top: 50px;
+}
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+}
+.layer {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+    background-color: rgb(226, 0, 0,0.7);
 }
